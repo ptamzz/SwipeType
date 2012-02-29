@@ -2,16 +2,104 @@
 
 /* 	
 	Description: Controls generic styling of the whole applicatiion
-	Version: 1.0
-	Date: 27/1/2011
+	Version: 2.0
+	Date: 29/2/2012
 	Author: Pritam Pebam
 	Email: ptamzz@gmail.com
 	twitter: @ptamzz
-	URL: http://12bubbles.com
+	URL: http://12bubbles.com; http://ptamzz.com
 */
 
-@import 'header.css';
-@import 'footer.css';
+/* @import 'header.css'; */
+@charset "utf-8";
+/* CSS Document */
+
+#startStory {
+	min-height: 50px;
+	border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+}
+
+#newPostWrap{
+	margin-bottom: 2px;
+	min-height: 55px;
+	padding: 0 20px 10px 20px;
+	border-bottom: 1px solid #E5F2FA;
+	box-shadow: 0 1px 0 #0097c2;
+}
+
+#frmNewStory label { font-size: 12px; color: #CCC; }
+#frmNewStory .counter { float: right; margin-right: 20px; font-size: 15px; display: none; }
+#frmNewStory label{ color: #960; }
+
+#tarea {
+	
+}
+
+#stryTitle { float: left; }
+
+.storyField{
+	font-size: 18px;
+	width: 544px; height: 20px;
+	padding: 5px;
+	background-color: #E5F2FA;
+	border: 1px solid #465A65;
+	border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+
+#tarea:hover { border: 1px solid #0b5c8e; }
+
+#hideFrm { display: none; }
+
+#stryTitle:hover { background-color: #e5f2fa; }
+
+#postNewStory {
+	width: 70px;
+	height: 34px;
+	margin-left: 22px;
+	float: left;
+}
+
+#cancelNewStory {
+}
+
+
+/* Main Board */
+#board { margin-top: 5px; min-height: 400px; }
+
+/* Top user Info section */
+.account { text-align: right; cursor: pointer; padding: 10px; }
+.account .name { margin: 0 5px; }
+.dropDwn { background-color: #52575D; position: relative; width: 178px; font-size: 14px; }
+
+.dropDwn ul { list-style: none; padding-bottom: 10px; }
+.dropDwn ul li a.userLink{ padding: 5px 20px; display: block; }
+.dropDwn ul li a, .dropDwn ul li a:active, .dropDwn ul li a:visited { color: #FFF; text-decoration: none; }
+.dropDwn ul li a:hover { color: #CCC; }
+
+.gbma {
+	position: relative;
+	top: -1px;
+	border-style: solid dashed dashed;
+	border-color: transparent;
+	border-top-color: silver;
+	display: -moz-inline-box;
+	display: inline-block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width: 0;
+	border-width: 5px 5px 0;
+	padding-top: 1px;
+}
+
+/* @import 'footer.css';*/
+#footer{
+	clear: both;
+	position: relative;
+	top:75px;
+	font-size: 12px;
+	color: #999;
+}
 
 /* Makeshift CSS Reset */  
 * { margin: 0; padding: 0; } 
@@ -20,7 +108,7 @@ body { font-family: Tahoma, Geneva, sans-serif;	font-size: 16px; -webkit-user-se
 
 .clear { clear: both; }
 
-.home-btn { position: absolute; width: 100px; height: 100px; left: 115px; top: 160px; border-radius: 110px; background-color: #333; z-index: 100; }
+.home-btn { position: absolute; width: 80px; height: 80px; left: 115px; top: 160px; border-radius: 80px; background-color: #333; z-index: 100; }
 
 .pie-container {
 	height: 300px;
@@ -28,8 +116,8 @@ body { font-family: Tahoma, Geneva, sans-serif;	font-size: 16px; -webkit-user-se
 }
 .other-btns {
 	position: absolute;
-	top: 185px;
-	left: 140px;
+	top: 175px;
+	left: 130px;
 	width: 50px;
 	height: 50px;
 	-webkit-border-radius: 25px;
@@ -39,8 +127,8 @@ body { font-family: Tahoma, Geneva, sans-serif;	font-size: 16px; -webkit-user-se
 @-webkit-keyframes show-btns {
 	0% { 
 		position: absolute;
-		top: 60px;
-		left: 15px;
+		top: 150px; 
+		left: 105px;
 		width: 50px;
 		height: 50px;
 		-webkit-border-radius: 25px;
@@ -48,8 +136,8 @@ body { font-family: Tahoma, Geneva, sans-serif;	font-size: 16px; -webkit-user-se
 	}
 	100% { 
 		position: absolute;
-		top: 20px;
-		left: 15px;
+	/*	top: 20px; */
+		left: 5px;
 		width: 300px;
 		height: 300px;
 		-webkit-border-radius: 150px;
@@ -62,45 +150,46 @@ body { font-family: Tahoma, Geneva, sans-serif;	font-size: 16px; -webkit-user-se
 	-moz-animation: show-btns .1s ease-in; /* Firefox */
 	-webkit-animation: show-btns .1s ease-in; /* Safari and Chrome */
 	position: absolute;
-	top: 60px;
-	left: 15px;
-	width: 300px;
-	height: 300px;
-	-webkit-border-radius: 150px;
+	position: absolute;
+	top: 75px;
+	left: 30px;
+	width: 250px;
+	height: 250px;
+	-webkit-border-radius: 125px;
 	overflow: hidden;
 }
 
 .pie-left{
 	position: absolute;
-	width: 300px;
-	height: 300px;
-	-webkit-border-radius: 150px;
-	border-radius: 150px;
-	clip: rect(0px, 150px, 150px, 0);
+	width: 250px;
+	height: 250px;
+	-webkit-border-radius: 125px;
+	border-radius: 125px;
+	clip: rect(0px, 125px, 125px, 0);
 }
 
 .pie-right{
 	position: absolute;
-	width: 300px;
-	height: 300px;
-	-webkit-border-radius: 150px;
-	border-radius: 150px;
-	clip: rect(0px, 300px, 150px, 150px);
+	width: 250px;
+	height: 250px;
+	-webkit-border-radius: 125px;
+	border-radius: 125px;
+	clip: rect(0px, 250px, 125px, 125px);
 }
 
 .hold-left {
 	position: absolute;
-	width: 300px;
-	height: 300px;
-	-webkit-border-radius: 150px;
+	width: 250px;
+	height: 250px;
+	-webkit-border-radius: 125px;
 }
 
 .hold-right {
 	position: absolute;
-	width: 300px;
-	height: 300px;
-	-webkit-border-radius: 150px;
-	clip: rect(0, 300px, 300px, 150px);
+	width: 250px;
+	height: 250px;
+	-webkit-border-radius: 125px;
+	clip: rect(0, 250px, 250px, 125px);
 }
 
 #holder { top: 0; left: 0; }
@@ -126,15 +215,15 @@ body { font-family: Tahoma, Geneva, sans-serif;	font-size: 16px; -webkit-user-se
 ul { list-style: none; z-index: 15; position: absolute; display: none; }
 ul li { border: transparent; }
 
-ul#top { top: 80px; left: 65px; }
-ul#top li { float: left; width: 100px; height: 90px; }
+ul#top { top: 75px; left: 55px; }
+ul#top li { float: left; width: 100px; height: 80px; }
 
-ul#mid { top: 180px; left: 15px; }
+ul#mid { top: 170px; left: 5px; }
 ul#mid li:first-child { float: left; width: 100px; height: 60px; }
-ul#mid li#five { float: left; width: 100px; height: 60px; margin-left: 95px; }
+ul#mid li#five { float: left; width: 80px; height: 60px; margin-left: 95px; }
 
-ul#bot { top: 250px; left: 65px; }
-ul#bot li { float: left; width: 100px; height: 90px; }
+ul#bot { top: 245px; left: 55px; }
+ul#bot li { float: left; width: 100px; height: 80px; }
 
 .input-wrap { width: 90%; margin: 10px auto;}
 

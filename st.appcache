@@ -6,8 +6,6 @@ index.php
 inc/head.php
 
 # css files
-css/footer.css
-css/header.css
 css/jquery.mobile-1.0.min.css
 css/styles.css
 
