@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* 	
+	Description: Controls generic styling of the whole applicatiion
+	Version: 1.0
+	Date: 27/1/2011
+	Author: Pritam Pebam
+	Email: ptamzz@gmail.com
+	twitter: @ptamzz
+	URL: http://12bubbles.com
+*/
+
+@import 'header.css';
+@import 'footer.css';
+
+/* Makeshift CSS Reset */  
+* { margin: 0; padding: 0; } 
+
+body { font-family: Tahoma, Geneva, sans-serif;	font-size: 16px; -webkit-user-select: none; }
+
+.clear { clear: both; }
+
+.home-btn { position: absolute; width: 100px; height: 100px; left: 115px; top: 160px; border-radius: 110px; background-color: #333; z-index: 100; }
+
+.pie-container {
+	height: 300px;
+	margin: 25px 15px;
+}
+.other-btns {
+	position: absolute;
+	top: 185px;
+	left: 140px;
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 25px;
+	overflow: hidden;	
+}
+
+@-webkit-keyframes show-btns {
+	0% { 
+		position: absolute;
+		top: 160px; 
+		left: 115px;
+		width: 50px;
+		height: 50px;
+		-webkit-border-radius: 25px;
+		overflow: hidden;
+	}
+	100% { 
+		position: absolute;
+	/*	top: 20px; */
+		left: 15px;
+		width: 300px;
+		height: 300px;
+		-webkit-border-radius: 150px;
+		overflow: hidden;
+	}
+}
+
+.pie-container .show-btns {
+	animation: show-btns .1s ease-in;
+	-moz-animation: show-btns .1s ease-in; /* Firefox */
+	-webkit-animation: show-btns .1s ease-in; /* Safari and Chrome */
+	position: absolute;
+	top: 60px;
+	left: 15px;
+	width: 300px;
+	height: 300px;
+	-webkit-border-radius: 150px;
+	overflow: hidden;
+}
+
+.pie-left{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+	clip: rect(0px, 150px, 150px, 0);
+}
+
+.pie-right{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+	clip: rect(0px, 300px, 150px, 150px);
+}
+
+.hold-left {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	-webkit-border-radius: 150px;
+}
+
+.hold-right {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	-webkit-border-radius: 150px;
+	clip: rect(0, 300px, 300px, 150px);
+}
+
+#holder { top: 0; left: 0; }
+
+#pieSlice1 { }
+#pieSlice1 .pie-left { background-color: #FFF212; }
+
+#pieSlice2 { -webkit-transform:rotate(-60deg); }
+#pieSlice2 .pie-left { background-color: #F58634; }
+
+#pieSlice3 { -webkit-transform:rotate(-120deg); }
+#pieSlice3 .pie-left { background-color: #A8CF45; }
+
+#pieSlice4 {  }
+#pieSlice4 .pie-right { background-color: #A8CF45; }
+
+#pieSlice5 { -webkit-transform:rotate(60deg); }
+#pieSlice5 .pie-right { background-color: #F58634; }
+
+#pieSlice6 { -webkit-transform:rotate(120deg);  }
+#pieSlice6 .pie-right { background-color: #FFF212; -webkit-transform:rotate(-30deg); }
+
+ul { list-style: none; z-index: 15; position: absolute; display: none; }
+ul li { border: transparent; }
+
+ul#top { top: 80px; left: 65px; }
+ul#top li { float: left; width: 100px; height: 90px; }
+
+ul#mid { top: 180px; left: 15px; }
+ul#mid li:first-child { float: left; width: 100px; height: 60px; }
+ul#mid li#five { float: left; width: 100px; height: 60px; margin-left: 95px; }
+
+ul#bot { top: 250px; left: 65px; }
+ul#bot li { float: left; width: 100px; height: 90px; }
+
+.input-wrap { width: 90%; margin: 10px auto;}
+
+
+
+
+
+
+

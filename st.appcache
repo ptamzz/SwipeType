@@ -1,0 +1,50 @@
+CACHE MANIFEST
+
+# Offline cache v1.1
+# html files
+index.php
+inc/head.php
+
+# css files
+css/footer.css
+css/header.css
+css/jquery.mobile-1.0.min.css
+css/styles.css
+
+# js files
+js/jquery.mobile-1.0.min.js
+js/jquery-1.7.1.min.js
+js/scripts.js
+
+# images
+img/st-splash.png
+
+# sound
+snd/a-short.mp3
+snd/b-short.mp3
+snd/c-short.mp3
+snd/d-short.mp3
+snd/e-short.mp3
+snd/f-short.mp3
+snd/g-short.mp3
+snd/h-short.mp3
+snd/i-short.mp3
+snd/j-short.mp3
+snd/k-short.mp3
+snd/l-short.mp3
+snd/m-short.mp3
+snd/n-short.mp3
+snd/o-short.mp3
+snd/p-short.mp3
+snd/q-short.mp3
+snd/r-short.mp3
+snd/s-short.mp3
+snd/t-short.mp3
+snd/u-short.mp3
+snd/v-short.mp3
+snd/w-short.mp3
+snd/x-short.mp3
+snd/y-short.mp3
+snd/z-short.mp3
+snd/beep-caps.mp3
+snd/beep-space.mp3
