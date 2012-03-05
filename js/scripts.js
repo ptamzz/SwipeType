@@ -46,6 +46,12 @@ $(function() {
 	    space.play();
     });
 	
+	//To type space
+	$(".backspace").bind('doubletap', function(event){
+	   $('#blindType').val($('#blindType').val().substr(0, $('#blindType').val().length - 1));
+	   space.play();
+    });
+	
 	document.addEventListener('touchmove', function(event) {
 		event.preventDefault();
 		
@@ -202,16 +208,38 @@ $(function() {
 	
 }); // jQuery $(funtion() ends
 
-//To handle cache manifest
-/*var webappCache = window.applicationCache;
+/* //To handle cache manifest
+var webappCache = window.applicationCache;
 
 function updateCache() {
     webappCache.swapCache();
 }
 
+
+
+webappCache.addEventListener("error", errorCache, false);
+webappCache.addEventListener("updateready", updateCache, false); */
+/* 
 function errorCache() {
     alert("Cache failed to update");
 }
 
-webappCache.addEventListener("error", errorCache, false);
-webappCache.addEventListener("updateready", updateCache, false);*/
+// Check if a new cache is available on page load.
+window.addEventListener('load', function(e) {
+
+  window.applicationCache.addEventListener('updateready', function(e) {
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      // Browser downloaded a new app cache.
+      // Swap it in and reload the page to get the new hotness.
+      window.applicationCache.swapCache();
+      if (confirm('A new version of this site is available. Load it?')) {
+        window.location.reload();
+      }
+    } else {
+      // Manifest didn't changed. Nothing new to server.
+    }
+  }, false);
+  
+  webappCache.addEventListener("error", errorCache, false);
+
+}, false); */

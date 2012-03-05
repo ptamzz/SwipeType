@@ -1,15 +1,16 @@
 CACHE MANIFEST
 
-# Offline cache v1.1.0.0.0.0
+# Offline cache v1.1.0.0.0.0.0
 # html files
 index.html
 
 # css files
 css/jquery.mobile-1.0.min.css
-css/styles.css
+css/style.css
 
 # js files
 js/jquery.mobile-1.0.min.js
+js/jquery.doubletap.js
 js/jquery-1.7.1.min.js
 js/scripts.js
 

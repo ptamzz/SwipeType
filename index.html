@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="st.appcache" >
+<html lang="en" > <!-- manifest="cache.manifest" -->
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Swipe Type</title>
@@ -33,11 +33,12 @@
 	
 </style>
 <body ontouchmove="BlockMove(event);">
-    <div data-role="page">
+    <div id="main" data-role="page">
 		<div id="case" class="upper"></div>
         <div class="input-wrap">
             <input id="blindType" name="typed" type="text" />
         </div>
+		<!-- <div id="animate"></div> -->
     
         <div class="pie-container">
         	<div class="home-btn"></div>
@@ -65,7 +66,7 @@
             <li id="six" class="dot"></li>
             <div class="clear"></div>
         </ul>
-        
+        <div class="backspace"></div>
     </div>
 </body>
 </html>
