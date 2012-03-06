@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Offline cache v2.0
+# Offline cache v2.1.0.0.0.00.0
 # html files
 index.html
 
@@ -11,6 +11,7 @@ css/style.css
 # js files
 js/jquery.mobile-1.0.min.js
 js/jquery.doubletap.js
+js/jquery.touchSwipe-1.2.5.js
 js/jquery-1.7.1.min.js
 js/scripts.js
 
@@ -47,3 +48,4 @@ snd/y-short.mp3
 snd/z-short.mp3
 snd/beep-caps.mp3
 snd/beep-space.mp3
+snd/beep-8.mp3
