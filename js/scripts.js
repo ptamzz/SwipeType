@@ -105,22 +105,22 @@ $(function() {
 				//$('.home-btn').append("Touch x:" + touch.pageX + ", y:" + touch.pageY);
 				
 				// get dot 1
-				if((touch.pageX > 65 && touch.pageX < 165) && (touch.pageY > 80 && touch.pageY < 170)){ one = true; $("#pieSlice1 .pie-left").css({ 'background-color' : '#d6c002'}); }
+				if((touch.pageX > 65 && touch.pageX < 165) && (touch.pageY > 80 && touch.pageY < 170)){ one = true; $("#pieSlice1 .pie-left").css({ 'background-color' : '#333'}); }
 				
 				// get dot 4
-				if((touch.pageX > 165 && touch.pageX < 265) && (touch.pageY > 80 && touch.pageY < 170)){ four = true; $("#pieSlice4 .pie-right").css({ 'background-color' : '#213b66'});}
+				if((touch.pageX > 165 && touch.pageX < 265) && (touch.pageY > 80 && touch.pageY < 170)){ four = true; $("#pieSlice4 .pie-right").css({ 'background-color' : '#333'});}
 				
 				// get dot 2
-				if((touch.pageX > 15 && touch.pageX < 115) && (touch.pageY > 180 && touch.pageY < 240)){ two = true; $("#pieSlice2 .pie-left").css({ 'background-color' : '#b21323'});}
+				if((touch.pageX > 15 && touch.pageX < 115) && (touch.pageY > 180 && touch.pageY < 240)){ two = true; $("#pieSlice2 .pie-left").css({ 'background-color' : '#333'});}
 				
 				// get dot 5
-				if((touch.pageX > 210 && touch.pageX < 310) && (touch.pageY > 180 && touch.pageY < 240)){ five = true; $("#pieSlice5 .pie-right").css({ 'background-color' : '#b21323'});}
+				if((touch.pageX > 210 && touch.pageX < 310) && (touch.pageY > 180 && touch.pageY < 240)){ five = true; $("#pieSlice5 .pie-right").css({ 'background-color' : '#333'});}
 				
 				// get dot 3
-				if((touch.pageX > 65 && touch.pageX < 165) && (touch.pageY > 255 && touch.pageY < 355)){ three = true; $("#pieSlice3 .pie-left").css({ 'background-color' : '#213b66'});}
+				if((touch.pageX > 65 && touch.pageX < 165) && (touch.pageY > 255 && touch.pageY < 355)){ three = true; $("#pieSlice3 .pie-left").css({ 'background-color' : '#333'});}
 				
 				// get dot 6
-				if((touch.pageX > 165 && touch.pageX < 265) && (touch.pageY > 255 && touch.pageY < 355)){ six = true; $("#pieSlice6 .pie-right").css({ 'background-color' : '#d6c002'}); }
+				if((touch.pageX > 165 && touch.pageX < 265) && (touch.pageY > 255 && touch.pageY < 355)){ six = true; $("#pieSlice6 .pie-right").css({ 'background-color' : '#333'}); }
 			}
 		}  //if(tapped){ ends
 	}, false);
