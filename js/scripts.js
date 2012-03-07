@@ -84,6 +84,10 @@ $(function() {
 	   $('#blindType').val($('#blindType').val().substr(0, $('#blindType').val().length - 1));
 	   space.play();
     });
+	//Show Buttons: when tapped.
+	$(".backspace").bind('taphold',function(event, ui){
+       $('#blindType').val('');
+    });
 	
 	//Handling single tap for dot one which represents letter 'a' in English, 
 	$("#one").bind('tap',function(){
